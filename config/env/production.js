@@ -1,8 +1,6 @@
 'use strict';
-
 module.exports = {
-//    db: process.env.MONGOHQ_URL,
-    db: 'mongodb://localhost/aurea',
+    db: process.env.MONGO_URI || 'mongodb://localhost/aurea',
     app: {
         name: 'Aurea: un registro elettronico aperto - Production'
     },
